@@ -1,0 +1,15 @@
+# Go to the Django repository directory and start the session
+new_session -n server
+
+# Run the Django server in the first window
+send_keys 0 "echo test" "Enter"
+
+# Create a second window with a vim file browser open
+new_window -n edit "vim ."
+
+# Create 20% split at bottom of window 2 and run Django shell in it
+split 1 -v -p "20"
+send_keys 1.2 "echo test2" "Enter"
+
+# Select pane 1 in window 2
+select_pane 1.1

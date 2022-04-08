@@ -1,0 +1,45 @@
+[user]
+	name = Janosch Offenberg
+	email = janosch.offenberg@superluminar.io
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+	ui = true
+[format]
+  pretty = "Commit:  %C(yellow)%H%nAuthor:  %C(green)%aN <%aE>%nDate:    (%C(red)%ar%Creset) %ai%nSubject: %s%n%n%b"
+[commit]
+	template = /Users/janosch/.stCommitMsg
+[push]
+	default = matching
+[alias]
+	cm = commit -m
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  s = status
+  d = diff 
+  l = log 
+  dv = difftool -t meld -y
+	st = status -sb
+[pull]
+	rebase = false
+[pager]
+	branch = false
+[core]
+	pager = diff-so-fancy | less --tabs=2 -RFX
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[diff-so-fancy]
+	markEmptyLines = false

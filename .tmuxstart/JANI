@@ -1,0 +1,12 @@
+new_session -n STD
+rename 0 term
+split 0 -h
+split 0.1 -v
+send_keys 0.1 "btop" "Enter"
+
+new_window -n logs
+split 1 -h
+send_keys 1.1 "tail -F -100 /var/log/system.log" "Enter"
+
+select_window 0
+select_pane 0.0
