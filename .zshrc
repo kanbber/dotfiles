@@ -1,4 +1,3 @@
-# zmodload zsh/zprof # enable if performance testing ist done 
 
 # If you come from bash you might have to change your $PATH.
 # Path to your oh-my-zsh installation.
@@ -100,8 +99,6 @@ alias tmux='tmux -2'
 alias muxi='mux JANI'
 alias vim='lvim' 
 alias v='lvim' 
-
-alias bku='bw get password "DB BKU WEB" | pbcopy'
 
 alias sconf='lvim /Users/janosch/.ssh/config'
 
