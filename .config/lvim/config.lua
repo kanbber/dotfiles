@@ -198,9 +198,10 @@ lvim.plugins = {
     { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 }
 
-vim.g.vimwiki_list = {{path = '~/Documents/zettelkasten', name = "VimWiki", index = 'vimWiki_start', syntax = 'markdown', ext = '.md'}}
+vim.g.vimwiki_list = {{path = '~/src/github.com/zettelkasten', name = "VimWiki", index = 'vimWiki_start', syntax = 'markdown', ext = '.md'}}
 
 local wilder = require('wilder')
+wilder.setup({modes = {':', '/', '?'}})
 wilder.set_option('pipeline', {
   wilder.branch(
     wilder.cmdline_pipeline({
