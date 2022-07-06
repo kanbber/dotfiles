@@ -2,11 +2,10 @@ new_session -n STD
 rename 0 term
 split 0 -h
 split 0.1 -v
-send_keys 0.1 "sudo glances" "Enter"
+send_keys 0.1 "btop" "Enter"
 
-new_window -n logs
+new_window -n term2
 split 1 -h
-send_keys 1.1 "cntlm; tail -F -100 /var/log/system.log" "enter"
 
 select_window 0
 select_pane 0.0

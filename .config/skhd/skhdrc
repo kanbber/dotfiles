@@ -33,6 +33,8 @@ hyper - m : yabai -m space --focus 5
 #cmd - 8 : yabai -m space --focus 8
 #cmd - 9 : yabai -m space --focus 9
 #cmd - 0 : yabai -m space --focus 10
+hyper - q : yabai -m space --focus prev
+hyper - w : yabai -m space --focus next
 
 ## swap window
 # fn - k : yabai -m window --swap north

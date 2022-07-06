@@ -20,6 +20,7 @@
   l = log 
   dv = difftool -t meld -y
 	st = status -sb
+  hist = log --follow -p
 [pull]
 	rebase = false
 [pager]
@@ -43,3 +44,9 @@
 	whitespace = red reverse
 [diff-so-fancy]
 	markEmptyLines = false
+[merge]
+	tool = vimdiff
+[mergetool]
+	keepBackup = false
+[mergetool "vimdiff"]
+	cmd = lvim -d $LOCAL $MERGED $REMOTE 

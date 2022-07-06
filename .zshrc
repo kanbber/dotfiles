@@ -92,7 +92,7 @@ export CDK_DEFAULT_REGION=eu-central-1
 
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -lta'
+alias l='ls -alF'
 alias p='open -a preview'
 
 alias tmux='tmux -2'
@@ -196,6 +196,8 @@ if type brew &>/dev/null; then
 	# compinit
 fi
 
+eval "$(anyenv init -)"
+
 #zprof
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -208,3 +210,6 @@ timezsh() {
   for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
 }
 # zprof # enable if performance testing ist done 
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
