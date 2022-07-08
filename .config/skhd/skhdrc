@@ -26,13 +26,16 @@ hyper - j : yabai -m window --focus south
 ## fast focus desktop Wont work with SIP Enabled
 #cmd + alt - x : yabai -m space --focus last
 hyper - u : yabai -m space --focus 1
+hyper - a : yabai -m space --focus 1
 hyper - i : yabai -m space --focus 2
 hyper - o : yabai -m space --focus 3
 hyper - p : yabai -m space --focus 4
-hyper - m : yabai -m space --focus 5
-#cmd - 8 : yabai -m space --focus 8
-#cmd - 9 : yabai -m space --focus 9
-#cmd - 0 : yabai -m space --focus 10
+hyper - 0x21 : yabai -m space --focus 5
+lalt - u : yabai -m space --focus 6
+lalt - i : yabai -m space --focus 7
+lalt - o : yabai -m space --focus 8
+lalt - p : yabai -m space --focus 9
+lalt - 0x21 : yabai -m space --focus 10
 hyper - q : yabai -m space --focus prev
 hyper - w : yabai -m space --focus next
 

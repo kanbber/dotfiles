@@ -26,6 +26,10 @@ yabai -m rule --add app="^Obsidian$" sticky=on manage=off
 yabai -m rule --add app="^Activity Monitor$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Path Finder$" manage=off
 
+# S K E T C H Y B A R  E V E N T S
+yabai -m signal --add event=window_focused action="sketchybar -m --trigger window_focus &> /dev/null"
+yabai -m signal --add event=window_title_changed action="sketchybar -m --trigger title_change &> /dev/null"
+
 yabai -m config mouse_follows_focus          off
 yabai -m config focus_follows_mouse          off
 yabai -m config window_origin_display        default
@@ -49,10 +53,13 @@ yabai -m config mouse_drop_action            swap
 
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  4
-yabai -m config bottom_padding               4
-yabai -m config left_padding                 4 
-yabai -m config right_padding                4
-yabai -m config window_gap                   5
+yabai -m config top_padding                  2
+yabai -m config bottom_padding               2
+yabai -m config left_padding                 2
+yabai -m config right_padding                2
+yabai -m config window_gap                   4
+
+
+# status bar
 
 echo "yabai configuration loaded.."
